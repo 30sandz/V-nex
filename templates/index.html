@@ -1,0 +1,66 @@
+{% extends "style.html" %}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+<title>{{title}}</title>
+<link rel="stylesheet" href="{{url_for ('static', filename='index.css') }}">
+<link rel="stylesheet" href="{{url_for ('static', filename='style.css') }}">
+<script src="{{url_for ('static', filename='style.js') }}"></script>
+<script src="{{url_for ('static', filename='index.js') }}"></script>
+<div class="btn ">
+    <a href="#body">
+        <img src="/static/img/nex1.png">
+    </a>
+</div>
+<div class="quote">
+    <p>Knowledge is power</p>
+</div>
+</div>
+<div class="body" id="body">
+    <div class="content" id="content">
+        <div class="exp">
+            <div class="panel">
+                <div class="std">
+                    <select name="" id="std" onchange="selectedStd()">
+                        <option value="std">Select Std</option>
+                        <option value="11th">11th</option>
+                    </select>
+                </div>
+                <div class="sub">
+                    <select name="" id="sub" onchange="selectedSub()">
+                        <option value="subject">Choose subject</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="English">English</option>
+                        <option value="Maths">Maths</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="CSC">CSC</option>
+                        <option value="Bio-Bot">Bio-Bot</option>
+                        <option value="Bio-Zoo">Bio-Zoo</option>
+                        <option value="Botany">Botany</option>
+                        <option value="Zoology">Zoology</option>
+                        <option value="Compl.Appl">Compl.Appl</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Eco">Eco</option>
+                        <option value="B.Maths">B.Maths</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sub-eng">
+            <div class="importance subject english" id="eng">
+                
+            </div>
+        </div>
+        <div class="sub-math">
+            <div class="importance subject math" id="math">
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+{% endblock%}
